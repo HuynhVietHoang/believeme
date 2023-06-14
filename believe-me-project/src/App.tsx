@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Sidebar from './components/SideBar';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -65,7 +66,7 @@ function App() {
         <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
       </>
     ) : null}
-
+  <Sidebar></Sidebar>
   </div>
 
   );
